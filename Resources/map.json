@@ -1,0 +1,1786 @@
+[
+  {
+    "country": "Mauritius",
+    "region": "",
+    "carrier": "Emtel",
+    "email-to-sms": "@emtelworld.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "South Africa",
+    "region": "",
+    "carrier": "MTN",
+    "email-to-sms": "@sms.co.za",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "South Africa",
+    "region": "",
+    "carrier": "Vodacom",
+    "email-to-sms": "@voda.co.za",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "China",
+    "region": "",
+    "carrier": "China Mobile",
+    "email-to-sms": "@139.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Hong Kong",
+    "region": "",
+    "carrier": "Accessyou",
+    "email-to-sms": "",
+    "email-to-mms": "@messaging.accessyou.com",
+    "notes": ""
+  },
+  {
+    "country": "Hong Kong",
+    "region": "",
+    "carrier": "CSL",
+    "email-to-sms": "",
+    "email-to-mms": "@mgw.mmsc1.hkcsl.com",
+    "notes": ""
+  },
+  {
+    "country": "Nepal",
+    "region": "",
+    "carrier": "Ncell(Previously Mero Mobile)[14]",
+    "email-to-sms": "977@sms.ncell.com.np",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Singapore",
+    "region": "",
+    "carrier": "M1",
+    "email-to-sms": "@m1.com.sg",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Singapore",
+    "region": "",
+    "carrier": "Starhub Enterprise Messaging Solution",
+    "email-to-sms": "@starhub-enterprisemessaging.com",
+    "email-to-mms": "",
+    "notes": "Powered by Soprano"
+  },
+  {
+    "country": "South Korea",
+    "region": "",
+    "carrier": "Helio",
+    "email-to-sms": "@myhelio.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Austria",
+    "region": "",
+    "carrier": "Api4SMS",
+    "email-to-sms": "@members.api4sms.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Austria",
+    "region": "",
+    "carrier": "Firmensms",
+    "email-to-sms": "0043@subdomain.firmensms.at",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Bulgaria",
+    "region": "",
+    "carrier": "Globul",
+    "email-to-sms": "35989@sms.globul.bg",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Bulgaria",
+    "region": "",
+    "carrier": "Mobiltel",
+    "email-to-sms": "35988@sms.mtel.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Croatia",
+    "region": "",
+    "carrier": "T-Mobile",
+    "email-to-sms": "385@sms.t-mobile.hr",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Czech Republic",
+    "region": "",
+    "carrier": "Vodafone",
+    "email-to-sms": "alias@vodafonemail.cz",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "France",
+    "region": "",
+    "carrier": "SFR",
+    "email-to-sms": "@sfr.fr",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Germany",
+    "region": "",
+    "carrier": "O2",
+    "email-to-sms": "0@o2online.de",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Germany",
+    "region": "",
+    "carrier": "T-Mobile",
+    "email-to-sms": "@t-mobile-sms.de",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Germany",
+    "region": "",
+    "carrier": "Vodafone",
+    "email-to-sms": "0@vodafone-sms.de",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Iceland",
+    "region": "",
+    "carrier": "OgVodafone",
+    "email-to-sms": "@sms.is",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Iceland",
+    "region": "",
+    "carrier": "Sminn",
+    "email-to-sms": "@box.is",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Ireland",
+    "region": "",
+    "carrier": "Meteor",
+    "email-to-sms": "@sms.mymeteor.ie",
+    "email-to-mms": "@mms.mymeteor.ie",
+    "notes": ""
+  },
+  {
+    "country": "Italy",
+    "region": "",
+    "carrier": "TIM",
+    "email-to-sms": "0@timnet.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Italy",
+    "region": "",
+    "carrier": "Vodafone",
+    "email-to-sms": "3**@sms.vodafone.it",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Netherlands",
+    "region": "",
+    "carrier": "Orange",
+    "email-to-sms": "0@sms.orange.nl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Netherlands",
+    "region": "",
+    "carrier": "T-Mobile",
+    "email-to-sms": "31@gin.nl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Norway",
+    "region": "",
+    "carrier": "Sendega",
+    "email-to-sms": "@sendega.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Norway",
+    "region": "",
+    "carrier": "TeletopiaSMS",
+    "email-to-sms": "@sms.teletopiasms.no",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Poland",
+    "region": "",
+    "carrier": "Plus",
+    "email-to-sms": "+48@text.plusgsm.pl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Poland",
+    "region": "",
+    "carrier": "Plus",
+    "email-to-sms": "+@text.plusgsm.pl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Poland",
+    "region": "",
+    "carrier": "Polkomtel",
+    "email-to-sms": "+48@text.plusgsm.pl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Spain",
+    "region": "",
+    "carrier": "Altiria",
+    "email-to-sms": "info@altiria.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Spain",
+    "region": "",
+    "carrier": "Esendex",
+    "email-to-sms": "@esendex.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Spain",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "0@movistar.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Spain",
+    "region": "",
+    "carrier": "Vodafone",
+    "email-to-sms": "0@vodafone.es",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Spain",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "@movimensaje.com.ar",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Sweden",
+    "region": "",
+    "carrier": "Tele2",
+    "email-to-sms": "0@sms.tele2.se",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Switzerland",
+    "region": "",
+    "carrier": "Box Internet ServicesSMS Gateway",
+    "email-to-sms": "@sms.boxis.net",
+    "email-to-mms": "@mms.boxis.net",
+    "notes": "SMS API"
+  },
+  {
+    "country": "Switzerland",
+    "region": "",
+    "carrier": "Sunrise Communications",
+    "email-to-sms": "@gsm.sunrise.ch",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "aql",
+    "email-to-sms": "@text.aql.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "CM Telecom",
+    "email-to-sms": "@mail-sms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Connection Software (CSoft)",
+    "email-to-sms": "@itsarrived.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Esendex",
+    "email-to-sms": "@echoemail.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "HSL Mobile",
+    "email-to-sms": "@sms.haysystems.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Kapow SMS Gateway",
+    "email-to-sms": "@kapow.co.uk",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Mediaburst",
+    "email-to-sms": "@sms.mediaburst.co.uk",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "My-Cool-SMS",
+    "email-to-sms": "@my-cool-sms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Orange",
+    "email-to-sms": "@orange.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Txtlocal",
+    "email-to-sms": "@txtlocal.co.uk",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United Kingdom",
+    "region": "",
+    "carrier": "Univil Corporation",
+    "email-to-sms": "@viawebsms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "",
+    "region": "",
+    "carrier": "Freebie SMS",
+    "email-to-sms": "@smssturen.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Andhra Pradesh",
+    "carrier": "Andhra Pradesh AirTel",
+    "email-to-sms": "91@airtelap.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Andhra Pradesh",
+    "carrier": "Andhra Pradesh Idea Cellular",
+    "email-to-sms": "@ideacellular.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Chennai",
+    "carrier": "Chennai RPG Cellular",
+    "email-to-sms": "9841@rpgmail.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Chennai",
+    "carrier": "Chennai Skycell / Airtel",
+    "email-to-sms": "919840@airtelchennai.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Delhi",
+    "carrier": "Delhi Airtel",
+    "email-to-sms": "919810@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Goa",
+    "carrier": "Goa Airtel",
+    "email-to-sms": "919890@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Goa",
+    "carrier": "Goa Idea Cellular",
+    "email-to-sms": "@ideacellular.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Gujarat",
+    "carrier": "Gujarat Airtel",
+    "email-to-sms": "919898@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Gujarat",
+    "carrier": "Gujarat Celforce / Fascel",
+    "email-to-sms": "9825@celforce.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Gujarat",
+    "carrier": "Gujarat Idea Cellular",
+    "email-to-sms": "@ideacellular.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Haryana",
+    "carrier": "Haryana Airtel",
+    "email-to-sms": "919896@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Haryana",
+    "carrier": "Haryana Escotel",
+    "email-to-sms": "9812@escotelmobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Himachai Pradesh",
+    "carrier": "Himachai Pradesh Airtel",
+    "email-to-sms": "919816@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Karnataka",
+    "carrier": "Karnataka Airtel",
+    "email-to-sms": "919845@airtelkk.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Kerala",
+    "carrier": "Kerala Airtel",
+    "email-to-sms": "919895@airtelkerala.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Kerala",
+    "carrier": "Kerala Escotel",
+    "email-to-sms": "9847@escotelmobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Kolkata",
+    "carrier": "Kolkata Airtel",
+    "email-to-sms": "919831@airtelkol.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Madhya Pradesh",
+    "carrier": "Madhya Pradesh Airtel",
+    "email-to-sms": "919893@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Maharashtra",
+    "carrier": "Maharashtra Airtel",
+    "email-to-sms": "919890@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Maharashtra",
+    "carrier": "Maharashtra Idea Cellular",
+    "email-to-sms": "@ideacellular.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Mumbai",
+    "carrier": "Mumbai Airtel",
+    "email-to-sms": "919892@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Punjab",
+    "carrier": "Punjab Airtel",
+    "email-to-sms": "919815@airtelmail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Tamil",
+    "carrier": "Tamil Nadu Aircel",
+    "email-to-sms": "9842@airsms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Tamil",
+    "carrier": "Tamil Nadu Airtel",
+    "email-to-sms": "919894@airtelmobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "Uttar Pradesh",
+    "carrier": "Uttar Pradesh West Escotel",
+    "email-to-sms": "9837@escotelmobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "",
+    "carrier": "B2Bsms B2B SMS",
+    "email-to-sms": "info@b2bsms.co.in",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "India",
+    "region": "",
+    "carrier": "B2Bsms B2B SMS",
+    "email-to-sms": "info@b2bsms.co.in or",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Israel",
+    "region": "",
+    "carrier": "Spikko",
+    "email-to-sms": "@SpikkoSMS.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Aliant",
+    "email-to-sms": "@sms.wirefree.informe.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Bell Mobility & Solo Mobile",
+    "email-to-sms": "@txt.bell.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Bell Mobility & Solo Mobile",
+    "email-to-sms": "@txt.bellmobility.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Fido",
+    "email-to-sms": "@sms.fido.ca",
+    "email-to-mms": "",
+    "notes": "As of June 2012, Roger's web server is faster"
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Koodo Mobile",
+    "email-to-sms": "@msg.telus.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Lynx Mobility",
+    "email-to-sms": "@sms.lynxmobility.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "MTS Mobility",
+    "email-to-sms": "@text.mtsmobility.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "PC Telecom",
+    "email-to-sms": "@mobiletxt.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "SaskTel",
+    "email-to-sms": "@sms.sasktel.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Virgin Mobile",
+    "email-to-sms": "@vmobile.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Westnet",
+    "email-to-sms": "",
+    "email-to-mms": "@t.westnet.ca",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Wind Mobile",
+    "email-to-sms": "@txt.windmobile.ca",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Rogers Wireless",
+    "email-to-sms": "@sms.rogers.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Canada",
+    "region": "",
+    "carrier": "Telus Mobility",
+    "email-to-sms": "@msg.telus.com",
+    "email-to-mms": "@mms.telusmobility.com",
+    "notes": ""
+  },
+  {
+    "country": "Costa Rica",
+    "region": "",
+    "carrier": "ICE",
+    "email-to-sms": "@sms.ice.cr",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Mexico",
+    "region": "",
+    "carrier": "Nextel",
+    "email-to-sms": "@msgnextel.com.mx",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Mexico",
+    "region": "",
+    "carrier": "Telcel",
+    "email-to-sms": "@itelcel.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Nicaragua",
+    "region": "",
+    "carrier": "Claro",
+    "email-to-sms": "@ideasclaro-ca.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Panama",
+    "region": "",
+    "carrier": "Masmovil",
+    "email-to-sms": "@cwmovil.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Puerto Rico",
+    "region": "",
+    "carrier": "Claro",
+    "email-to-sms": "@vtexto.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Alaska",
+    "carrier": "General Communications Inc.",
+    "email-to-sms": "@mobile.gci.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "American Samoa",
+    "carrier": "Bluesky Communications",
+    "email-to-sms": "@psms.bluesky.as",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "California",
+    "carrier": "Golden State Cellular",
+    "email-to-sms": "@gscsms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "California",
+    "carrier": "Greatcall",
+    "email-to-sms": "@vtxt.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Cincinnati & Ohio",
+    "carrier": "Cincinnati Bell",
+    "email-to-sms": "@gocbw.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Hawaii",
+    "carrier": "Hawaiian Telcom Wireless",
+    "email-to-sms": "@hawaii.sprintpcs.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Midwest",
+    "carrier": "i wireless (T-Mobile)",
+    "email-to-sms": "number.iws@iwspcs.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Texas",
+    "carrier": "Pocket Wireless",
+    "email-to-sms": "@sms.pocket.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Texas",
+    "carrier": "XIT Communications",
+    "email-to-sms": "@sms.xit.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "Virginia",
+    "carrier": "nTelos",
+    "email-to-sms": "@pcs.ntelos.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Rogers Wireless",
+    "email-to-sms": "@pcs.rogers.com",
+    "email-to-mms": "",
+    "notes": "Updated (2016)"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Rogers Wireless",
+    "email-to-sms": "@sms.rogers.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Telus Mobility",
+    "email-to-sms": "@msg.telus.com",
+    "email-to-mms": "@mms.telusmobility.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Helio",
+    "email-to-sms": "@myhelio.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Airfire Mobile",
+    "email-to-sms": "@sms.airfiremobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Alaska Communications",
+    "email-to-sms": "@msg.acsalaska.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Alltel (Allied Wireless)",
+    "email-to-sms": "@sms.alltelwireless.com",
+    "email-to-mms": "@mms.alltelwireless.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Ameritech",
+    "email-to-sms": "@paging.acswireless.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Assurance Wireless",
+    "email-to-sms": "@vmobl.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "AT&T Enterprise Paging",
+    "email-to-sms": "@page.att.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "AT&T Global Smart Messaging Suite",
+    "email-to-sms": "@sms.smartmessagingsuite.com",
+    "email-to-mms": "",
+    "notes": "Powered by Soprano"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "AT&T Mobility",
+    "email-to-sms": "@txt.att.net",
+    "email-to-mms": "@mms.att.net",
+    "notes": "no country code"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "AT&T Mobility (formerly Cingular)",
+    "email-to-sms": "@cingularme.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "AT&T Mobility (formerly Cingular)",
+    "email-to-sms": "@mobile.mycingular.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "BellSouth",
+    "email-to-sms": "@bellsouth.cl",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Bluegrass Cellular",
+    "email-to-sms": "@sms.bluecell.com",
+    "email-to-mms": "@mms.myblueworks.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Boost Mobile",
+    "email-to-sms": "@sms.myboostmobile.com",
+    "email-to-mms": "@myboostmobile.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "C Beyond (All Page Wireless)",
+    "email-to-sms": "@cbeyond.sprintpcs.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "C Spire Wireless",
+    "email-to-sms": "@cspire1.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cellcom",
+    "email-to-sms": "@cellcom.quiktxt.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cellular South",
+    "email-to-sms": "@csouth1.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Chariton Valley Wireless",
+    "email-to-sms": "@sms.cvalley.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Chat Mobility",
+    "email-to-sms": "@mail.msgsender.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cincinnati Bell",
+    "email-to-sms": "",
+    "email-to-mms": "@mms.gocbw.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cingular (Postpaid)",
+    "email-to-sms": "@cingular.com",
+    "email-to-mms": "",
+    "notes": "Must be logged in prior to visiting link"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cingular (Postpaid)",
+    "email-to-sms": "@mobile.mycingular.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+    {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cingular Wireless",
+    "email-to-sms": "@txt.att.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Cleartalk",
+    "email-to-sms": "@sms.cleartalk.us",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Consumer Cellular",
+    "email-to-sms": "@mailmymobile.net",
+    "email-to-mms": "",
+    "notes": "Alternate address, seen as return address when texting to email (2017)"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "DTC",
+    "email-to-sms": "@sms.advantagecell.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Edge Wireless",
+    "email-to-sms": "@sms.edgewireless.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Element Mobile",
+    "email-to-sms": "@SMS.elementmobile.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Esendex",
+    "email-to-sms": "@echoemail.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "i-wireless (Sprint PCS)",
+    "email-to-sms": "@iwirelesshometext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Kajeet",
+    "email-to-sms": "@mobile.kajeet.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "LongLines",
+    "email-to-sms": "@text.longlines.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "MetroPCS",
+    "email-to-sms": "@mymetropcs.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Nextech",
+    "email-to-sms": "@sms.ntwls.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Page Plus Cellular(Verizon MVNO)",
+    "email-to-sms": "@vtext.com",
+    "email-to-mms": "@mypixmessages.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Pioneer Cellular",
+    "email-to-sms": "nine-digit-@zsend.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Qwest Wireless",
+    "email-to-sms": "@qwestmp.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Red Pocket Mobile(AT&T MVNO)",
+    "email-to-sms": "@txt.att.net",
+    "email-to-mms": "@mms.att.net",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Simple Mobile",
+    "email-to-sms": "@smtext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Solavei",
+    "email-to-sms": "",
+    "email-to-mms": "XXXYYYZZZZ@tmomail.net",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "South Central Communications",
+    "email-to-sms": "@rinasms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Southernlinc",
+    "email-to-sms": "@page.southernlinc.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Sprint",
+    "email-to-sms": "@messaging.sprintpcs.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Sprint",
+    "email-to-sms": "@pm.sprint.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "@messaging.sprintpcs.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "@txt.att.net",
+    "email-to-mms": "@mms.att.net",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "",
+    "email-to-mms": "@mmst5.tracfone.com",
+    "notes": "T-Mobile SIM"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "",
+    "email-to-mms": "@mypixmessages.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "",
+    "email-to-mms": "@tmomail.net",
+    "notes": "yes country code"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "",
+    "email-to-mms": "@tracfone.plspictures.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Straight Talk",
+    "email-to-sms": "@vtext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Syringa Wireless",
+    "email-to-sms": "@rinasms.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "T-Mobile",
+    "email-to-sms": "",
+    "email-to-mms": "@tmomail.net",
+    "notes": "yes country code"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Teleflip",
+    "email-to-sms": "@teleflip.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Ting",
+    "email-to-sms": "@message.ting.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Unicel",
+    "email-to-sms": "@utext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Union Wireless",
+    "email-to-sms": "@union-tel.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "US Cellular",
+    "email-to-sms": "@email.uscc.net",
+    "email-to-mms": "@mms.uscc.net",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "USA Mobility",
+    "email-to-sms": "@usamobility.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Verizon Wireless",
+    "email-to-sms": "@vtext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Verizon Wireless (Alltel)",
+    "email-to-sms": "@text.wireless.alltel.com",
+    "email-to-mms": "@message.Alltel.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Verizon Wireless (Alltel)",
+    "email-to-sms": "@text.wireless.alltel.com",
+    "email-to-mms": "@mms.alltel.net",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Verizon Wireless (Alltel)",
+    "email-to-sms": "@vtext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Viaero",
+    "email-to-sms": "@viaerosms.com",
+    "email-to-mms": "@mmsviaero.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Virgin Mobile",
+    "email-to-sms": "@vmobl.com",
+    "email-to-mms": "@vmpix.com",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Voyager Mobile",
+    "email-to-sms": "@text.voyagermobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "West Central Wireless",
+    "email-to-sms": "@sms.wcc.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "Centennial Wireless",
+    "email-to-sms": "@cwemail.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "",
+    "email-to-mms": "@mmst5.tracfone.com",
+    "notes": "Direct"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "@txt.att.net",
+    "email-to-mms": "",
+    "notes": "Indirect"
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "@email.uscc.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "@message.alltel.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "@tmomail.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "United States",
+    "region": "",
+    "carrier": "TracFone (prepaid)",
+    "email-to-sms": "@vtext.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "All Australian Mobile Networks",
+    "email-to-sms": "@sms.itcompany.com.au",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "Esendex",
+    "email-to-sms": "@echoemail.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "SMS Broadcast",
+    "email-to-sms": "@send.smsbroadcast.com.au",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "SMS Central",
+    "email-to-sms": "@sms.smscentral.com.au",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "SMS Global",
+    "email-to-sms": "@email.smsglobal.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "SMSPUP",
+    "email-to-sms": "@smspup.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "T-Mobile (Optus Zoo)",
+    "email-to-sms": "0@optusmobile.com.au",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "Telstra Integrated Messaging (powered by Soprano)",
+    "email-to-sms": "sms@tim.telstra.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Australia",
+    "region": "",
+    "carrier": "UTBox",
+    "email-to-sms": "@sms.utbox.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "New Zealand",
+    "region": "",
+    "carrier": "Spark New Zealand",
+    "email-to-sms": "@etxt.co.nz",
+    "email-to-mms": "",
+    "notes": "Charged."
+  },
+  {
+    "country": "New Zealand",
+    "region": "",
+    "carrier": "Vodafone",
+    "email-to-sms": "@mtxt.co.nz",
+    "email-to-mms": "",
+    "notes": "Charged."
+  },
+  {
+    "country": "Russia",
+    "region": "",
+    "carrier": "Beeline (Russia)",
+    "email-to-sms": "@sms.beemail.ru",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Argentina",
+    "region": "",
+    "carrier": "CTI (Now Claro)",
+    "email-to-sms": "@sms.ctimovil.com.ar",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Argentina",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "@sms.movistar.net.ar",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Argentina",
+    "region": "",
+    "carrier": "Nextel",
+    "email-to-sms": "TwoWay.11@nextel.net.ar",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Aruba",
+    "region": "",
+    "carrier": "Setar Mobile email (Aruba)",
+    "email-to-sms": "297@mas.aw",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Brazil",
+    "region": "",
+    "carrier": "Claro",
+    "email-to-sms": "@clarotorpedo.com.br",
+    "email-to-mms": "",
+    "notes": "Registration not required"
+  },
+  {
+    "country": "Brazil",
+    "region": "",
+    "carrier": "Vivo",
+    "email-to-sms": "@torpedoemail.com.br",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Colombia",
+    "region": "",
+    "carrier": "Claro",
+    "email-to-sms": "@iclaro.com.co",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Colombia",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "@movistar.com.co",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Colombia",
+    "region": "",
+    "carrier": "Tigo (Formerly Ola)",
+    "email-to-sms": "@sms.tigo.com.co",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Guyana",
+    "region": "",
+    "carrier": "Guyana Telephone &Telegraph",
+    "email-to-sms": "@sms.cellinkgy.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Uruguay",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "95@sms.movistar.com.uy",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Argentina",
+    "region": "",
+    "carrier": "Movistar",
+    "email-to-sms": "@movimensaje.com.ar",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "TellusTalk",
+    "email-to-sms": "@esms.nu",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "All Carrier",
+    "email-to-sms": "@email.experttexting.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "BulkSMS.com",
+    "email-to-sms": "@bulksms.net",
+    "email-to-mms": "",
+    "notes": "Login via API"
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Bulletin.net",
+    "email-to-sms": "InternationalFormatted@bulletinmessenger.net",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "CM Telecom",
+    "email-to-sms": "www.smsgateway.to/en",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Globalstar (satellite)",
+    "email-to-sms": "@msg.globalstarusa.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Google Fi",
+    "email-to-sms": "@msg.fi.google.com",
+    "email-to-mms": "@msg.fi.google.com",
+    "notes": " Will not work with Hangouts integration - messages will only be sent directly to activated handset in the default SMS application (Android Messages)."
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Iridium (satellite)",
+    "email-to-sms": "@msg.iridium.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Panacea Mobile",
+    "email-to-sms": "@api.panaceamobile.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "RoutoMessaging",
+    "email-to-sms": "@email2sms.routomessaging.com",
+    "email-to-mms": "",
+    "notes": ""
+  },
+  {
+    "country": "Any",
+    "region": "",
+    "carrier": "Sendmode",
+    "email-to-sms": "@sendmode.com",
+    "email-to-mms": "",
+    "notes": ""
+  }
+]
