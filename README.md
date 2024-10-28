@@ -13,7 +13,6 @@ Mass SMS is a powerful application that allows you to send SMS messages using SM
 
 ## Known Issues
 
- - Settings is not displaying saved settings if you press back and go back into settings (Don't wory they are there)
  - Spoofing sender is not working (If you know hot to do this please reach out on telegram @krummy01)
  - Data247 has been being a pain so I have not tested the Test STMP button or the Send button since building gui
 
