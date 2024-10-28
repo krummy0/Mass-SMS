@@ -22,23 +22,63 @@ public class gui {
     private STMPRotator stmpRotator;
     private SMS sms;
     
-
+    //data saving and loading
+    Data data;
+    
     public gui() {
-        apiKeys = new ArrayList<>();
-        hotWords = new HashMap<>();
-        personalizationKeywords = new ArrayList<>();
-        stmpSettings = new ArrayList<>();
-        leadsForSending = new ArrayList<>();
-
+    	loadSettings("Resources/settings.json");
         setupFrame();
         setupMainButtons();
         frame.setVisible(true);
+    }
+    
+    //save to default file
+    private void saveSettings() {
+    	saveSettings("Resources/settings.json");
+    }
+    //save to file
+    private void saveSettings(String file) {
+    	data.setApiKeys(apiKeys);
+    	data.setHotWords(hotWords);
+    	data.setLeadsForSending(leadsForSending);
+    	data.setPersonalizationKeywords(personalizationKeywords);
+    	data.setStmpSettings(stmpSettings);
+    	data.save(file);
+    }
+    //load from file
+    private void loadSettings(String file) {
+    	data = new Data(file);
+    	
+    	if (data.getApiKeys() != null)
+    		apiKeys = data.getApiKeys();
+    	else
+    		apiKeys = new ArrayList<>();
+    	
+    	if (data.getHotWords() != null)
+    		hotWords = data.getHotWords();
+    	else
+    		hotWords = new HashMap<>();
+    	
+    	if (data.getPersonalizationKeywords() != null)
+    		personalizationKeywords = data.getPersonalizationKeywords();
+    	else
+    		personalizationKeywords = new ArrayList<>();
+    	
+    	if (data.getStmpSettings() != null)
+    		stmpSettings= data.getStmpSettings();
+    	else
+    		stmpSettings = new ArrayList<>();
+    	
+    	if (data.getLeadsForSending() != null)
+    		leadsForSending = data.getLeadsForSending();
+    	else
+    		leadsForSending = new ArrayList<>();
     }
 
     private void setupFrame() {
         frame = new JFrame("MassSMS");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400, 300);
+        frame.setSize(400, 400);
         frame.setLayout(new BorderLayout());     
         frame.setResizable(false);
     }
@@ -82,8 +122,10 @@ public class gui {
 	        if (input != null) {
 	        	JOptionPane.showMessageDialog(frame, "Each server will text you its host. Sending now", "Alert", JOptionPane.INFORMATION_MESSAGE);
 	        	SMS smsVar = new SMS(input, apiKeys.get(0), checkBox.isSelected());
-	        	for (String to : smsVar.getAdresses().get(0))
-	        		stmpRotator.test("Mass SMS", to);
+	        	for (String to : smsVar.getAdresses().get(0)) {
+	        		stmpRotator.test("MassSMS", to);
+	        	}
+
 	        	JOptionPane.showMessageDialog(frame, "Sent. Give texts a few minutes to be received.", "Alert", JOptionPane.INFORMATION_MESSAGE);
 	        }
 	        else {
@@ -136,7 +178,7 @@ public class gui {
 
         // Title
         JLabel titleLabel = new JLabel("MassSMS", JLabel.CENTER);
-        titleLabel.setFont(new Font("Arial", Font.BOLD, 16));
+        titleLabel.setFont(new Font("Arial", Font.BOLD, 30));
         frame.add(titleLabel, BorderLayout.NORTH);
         
         // Panel for "From" field
@@ -149,7 +191,7 @@ public class gui {
         fromPanel.add(fromLabel, gbcFrom);
 
         gbcFrom.gridy = 1; // Move to next row for the text field
-        JTextField fromField = new JTextField(20);
+        JTextField fromField = new JTextField(25);
         fromPanel.add(fromField, gbcFrom);
         buttonPanel.add(fromPanel);
 
@@ -163,7 +205,7 @@ public class gui {
         messagePanel.add(messageLabel, gbcMessage);
 
         gbcMessage.gridy = 1; // Move to next row for the text area
-        JTextArea messageArea = new JTextArea(5, 20);
+        JTextArea messageArea = new JTextArea(10, 25);
         messageArea.setLineWrap(true);
         messageArea.setWrapStyleWord(true);
         JScrollPane messageScrollPane = new JScrollPane(messageArea);
@@ -234,12 +276,12 @@ public class gui {
         JButton backButton = new JButton("Back");
         backButton.addActionListener(e -> {
             frame.getContentPane().removeAll();
-            setupMainButtons(); // Re-setup the main buttons to return to the main screen
+            setupMainButtons();
             frame.revalidate();
             frame.repaint();
         });
 
-        frame.add(backButton, BorderLayout.SOUTH); // Add Back button at the bottom
+        frame.add(backButton, BorderLayout.SOUTH);
         frame.revalidate();
         frame.repaint();
     }
@@ -260,16 +302,54 @@ public class gui {
 
         frame.add(tabbedPane, BorderLayout.CENTER);
 
+        // Main panel for buttons
+        JPanel mainButtonPanel = new JPanel(new BorderLayout());
+
+        // Panel for Load and Save buttons
+        JPanel loadSavePanel = new JPanel(new FlowLayout()); // Use FlowLayout for side-by-side buttons
+
+        // Load settings button
+        JButton loadSettingsButton = new JButton("Load Settings");
+        loadSettingsButton.addActionListener(e -> {
+            String file = fileSelector("Resources/Settings");
+            if (file != null) {
+                loadSettings(file);
+                tabbedPane.removeAll();
+                tabbedPane.addTab("API Keys", createApiKeysPanel());
+                tabbedPane.addTab("Leads", createLeadsPanel());
+                tabbedPane.addTab("SMTP Servers", createStmpPanel());
+                tabbedPane.addTab("Hot Words", createHotWordsPanel());
+            }
+        });
+
+        // Save settings button
+        JButton saveSettingsButton = new JButton("Save Settings");
+        saveSettingsButton.addActionListener(e -> {
+            String name = JOptionPane.showInputDialog(frame, "Name:");
+            if (name != null) {
+                saveSettings("Resources/Settings/" + name + ".json");
+            }
+        });
+
+        loadSavePanel.add(loadSettingsButton);
+        loadSavePanel.add(saveSettingsButton);
+
         // Back button
         JButton backButton = new JButton("Back");
         backButton.addActionListener(e -> {
+            saveSettings();
             frame.getContentPane().removeAll();
             setupMainButtons(); // Re-setup the main buttons to return to the main screen
             frame.revalidate();
             frame.repaint();
         });
 
-        frame.add(backButton, BorderLayout.SOUTH); // Add Back button at the bottom
+        // Add the Load/Save panel and Back button to the main button panel
+        mainButtonPanel.add(loadSavePanel, BorderLayout.NORTH);
+        mainButtonPanel.add(backButton, BorderLayout.SOUTH);
+
+        frame.add(mainButtonPanel, BorderLayout.SOUTH);
+
         frame.revalidate();
         frame.repaint();
     }
@@ -385,8 +465,18 @@ public class gui {
         	stmpSettings.clear();
         	updateHeader(stmpPanel, "STMPs", stmpListModel.getSize());
         });
+        JButton removeStmpButton = new JButton("Remove");
+        removeStmpButton.addActionListener(e -> {
+        	int index = stmpList.getSelectedIndex();
+        	if (index != -1) {
+	        	stmpListModel.remove(index);
+	        	stmpSettings.remove(index);
+	        	updateHeader(stmpPanel, "STMPs", stmpListModel.getSize());
+        	}
+        });
 
         buttonPanel.add(loadStmpButton);
+        buttonPanel.add(removeStmpButton);
         buttonPanel.add(clearStmpButton);
         stmpPanel.add(buttonPanel, BorderLayout.SOUTH);
         return stmpPanel;
@@ -405,23 +495,21 @@ public class gui {
         hotWordsPanel.add(new JScrollPane(hotWordsList), BorderLayout.CENTER);
         JPanel buttonPanel = new JPanel(new FlowLayout());
 
-        JButton addHotWordButton = new JButton("Add Hot Word");
+        JButton addHotWordButton = new JButton("Add");
         addHotWordButton.addActionListener(e -> {
             String hotWord = JOptionPane.showInputDialog(frame, "Enter Hot Word:");
             if (hotWord != null && !hotWord.trim().isEmpty()) {
                 // Open file chooser to select a file
-                JFileChooser fileChooser = new JFileChooser();
-                int returnValue = fileChooser.showOpenDialog(frame);
-                if (returnValue == JFileChooser.APPROVE_OPTION) {
-                    File selectedFile = fileChooser.getSelectedFile();
-                    hotWords.put(hotWord, selectedFile.getAbsolutePath());
+                String file = fileSelector();
+                if (file != null) {
+                    hotWords.put(hotWord, file);
                     hotWordsListModel.addElement(hotWord);
                 }
             }
             updateHeader(hotWordsPanel, "Hot Words", hotWordsListModel.getSize());
         });
 
-        JButton removeHotWordButton = new JButton("Remove Hot Word");
+        JButton removeHotWordButton = new JButton("Remove");
         removeHotWordButton.addActionListener(e -> {
             int selectedIndex = hotWordsList.getSelectedIndex();
             if (selectedIndex != -1) {
@@ -499,13 +587,10 @@ public class gui {
     private JButton createLoadApiButton(JPanel panel, DefaultListModel<String> listModel) {
         JButton loadButton = new JButton("Load");
         loadButton.addActionListener(e -> {
-            JFileChooser fileChooser = new JFileChooser();
-            int returnValue = fileChooser.showOpenDialog(frame);
-            if (returnValue == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                FileDataReader reader = new FileDataReader(new String[]{"key"}, selectedFile.getAbsolutePath(), null);
+            String file = fileSelector();
+            if (file != null) {
+                FileDataReader reader = new FileDataReader(new String[]{"key"}, file, null);
                 List<String> loadedKeys = reader.get("key");
-                listModel.clear();
                 listModel.addAll(loadedKeys);
                 apiKeys.addAll(loadedKeys);
             }
@@ -529,14 +614,12 @@ public class gui {
 		   		return;
 		   	}
         	
-            JFileChooser fileChooser = new JFileChooser();
-            int returnValue = fileChooser.showOpenDialog(frame);
-            if (returnValue == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
+            String file = fileSelector();
+            if (file != null) {
                 List<String> leadKeys = new ArrayList<>();
                 leadKeys.add("number");
                 leadKeys.addAll(personalizationKeywords);
-                FileDataReader reader = new FileDataReader(leadKeys.toArray(new String[0]), selectedFile.getAbsolutePath(), delineator);
+                FileDataReader reader = new FileDataReader(leadKeys.toArray(new String[0]), file, delineator);
                 List<Map<String, String>> fetchedLeads = reader.get();
                 leadsForSending.addAll(fetchedLeads);
                 leadsListModel.clear();
@@ -566,11 +649,9 @@ public class gui {
         		return;
         	}
         	
-            JFileChooser fileChooser = new JFileChooser();
-            int returnValue = fileChooser.showOpenDialog(frame);
-            if (returnValue == JFileChooser.APPROVE_OPTION) {
-                File selectedFile = fileChooser.getSelectedFile();
-                FileDataReader reader = new FileDataReader(new String[]{"host", "port", "username", "password"}, selectedFile.getAbsolutePath(), "encryption", delineator);
+            String file = fileSelector();
+            if (file != null) {
+                FileDataReader reader = new FileDataReader(new String[]{"host", "port", "username", "password"}, file, "encryption", delineator);
                 stmpSettings.addAll(reader.get());
                 stmpListModel.clear();
                 for (Map<String, String> map : stmpSettings) {
@@ -609,5 +690,32 @@ public class gui {
             updateHeader(panel, "API Keys", apiKeys.size());
         });
         return removeButton;
+    }
+    
+    public String fileSelector() {
+    	return fileSelector(null);
+    }
+    public String fileSelector(String initialPath) {
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Select a File");
+
+        // Set the initial directory to the specified path
+        if (initialPath != null && !initialPath.isEmpty()) {
+            File initialDirectory = new File(initialPath);
+            if (initialDirectory.exists() && initialDirectory.isDirectory()) {
+                fileChooser.setCurrentDirectory(initialDirectory);
+            }
+        }
+
+        // Show the file chooser dialog
+        int userSelection = fileChooser.showOpenDialog(null);
+
+        // Check if the user selected a file
+        if (userSelection == JFileChooser.APPROVE_OPTION) {
+            File selectedFile = fileChooser.getSelectedFile();
+            return selectedFile.getAbsolutePath(); // Return the absolute path
+        } else {
+            return null; // User canceled the selection
+        }
     }
 }
