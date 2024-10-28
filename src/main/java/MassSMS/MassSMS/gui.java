@@ -1,5 +1,4 @@
 package MassSMS.MassSMS;
-//TODO Hotwords must include file paths
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,14 +10,6 @@ import java.util.Map;
 
 public class gui {
     private JFrame frame;
-    private DefaultListModel<String> apiKeysListModel;
-    private DefaultListModel<String> leadsListModel;
-    private DefaultListModel<String> stmpListModel;
-    private DefaultListModel<String> hotWordsListModel;
-    private JList<String> apiKeysList;
-    private JList<String> leadsList;
-    private JList<String> stmpList;
-    private JList<String> hotWordsList;
 
     private List<Map<String, String>> leadsForSending;
     private List<Map<String, String>> stmpSettings;
@@ -316,16 +307,20 @@ public class gui {
 
     private JPanel createApiKeysPanel() {
         JPanel apiKeysPanel = new JPanel(new BorderLayout());
-        apiKeysListModel = new DefaultListModel<>();
-        apiKeysList = new JList<>(apiKeysListModel);
+        DefaultListModel<String> apiKeysListModel = new DefaultListModel<>();
+        JList<String> apiKeysList = new JList<>(apiKeysListModel);
+        //load
+        for (String key : apiKeys) {
+        	apiKeysListModel.addElement(key);
+        }
         apiKeysList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         apiKeysPanel.add(createHeader("API Keys",apiKeysListModel.getSize()), BorderLayout.NORTH);
         apiKeysPanel.add(new JScrollPane(apiKeysList), BorderLayout.CENTER);
         JPanel buttonPanel = new JPanel(new FlowLayout());
 
-        JButton loadButton = createLoadApiButton(apiKeysPanel, apiKeysListModel, apiKeys);
-        JButton addKeyButton = createAddApiButton(apiKeysPanel, apiKeysListModel, apiKeys);
-        JButton removeKeyButton = createRemoveApiButton(apiKeysPanel, apiKeysListModel, apiKeys);
+        JButton loadButton = createLoadApiButton(apiKeysPanel, apiKeysListModel);
+        JButton addKeyButton = createAddApiButton(apiKeysPanel, apiKeysListModel);
+        JButton removeKeyButton = createRemoveApiButton(apiKeysPanel, apiKeysListModel, apiKeysList);
 
         buttonPanel.add(loadButton);
         buttonPanel.add(addKeyButton);
@@ -336,8 +331,12 @@ public class gui {
 
     private JPanel createLeadsPanel() {
         JPanel leadsPanel = new JPanel(new BorderLayout());
-        leadsListModel = new DefaultListModel<>();
-        leadsList = new JList<>(leadsListModel);
+        DefaultListModel<String> leadsListModel = new DefaultListModel<>();
+        JList<String> leadsList = new JList<>(leadsListModel);
+        //load
+        for (Map<String, String> map : leadsForSending) {
+        	leadsListModel.addElement(map.get("number"));
+        }
         leadsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         leadsPanel.add(createHeader(new String[] {"Leads", "Personal Keywords"},
         		new int[] {leadsListModel.getSize(), personalizationKeywords.size()}),
@@ -345,7 +344,7 @@ public class gui {
         leadsPanel.add(new JScrollPane(leadsList), BorderLayout.CENTER);
         JPanel buttonPanel = new JPanel(new FlowLayout());
 
-        JButton loadLeadsButton = createLoadLeadsButton(leadsPanel);
+        JButton loadLeadsButton = createLoadLeadsButton(leadsPanel, leadsListModel);
         JButton clearLeadsButton = new JButton("Clear");
         clearLeadsButton.addActionListener(e -> {
         	leadsListModel.clear();
@@ -368,14 +367,18 @@ public class gui {
 
     private JPanel createStmpPanel() {
         JPanel stmpPanel = new JPanel(new BorderLayout());
-        stmpListModel = new DefaultListModel<>();
-        stmpList = new JList<>(stmpListModel);
+        DefaultListModel<String> stmpListModel = new DefaultListModel<>();
+        JList<String> stmpList = new JList<>(stmpListModel);
+        //load
+        for (Map<String, String> map : stmpSettings) {
+        	stmpListModel.addElement(map.get("host"));
+        }
         stmpList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         stmpPanel.add(createHeader("STMPs", stmpListModel.getSize()), BorderLayout.NORTH);
         stmpPanel.add(new JScrollPane(stmpList), BorderLayout.CENTER);
         JPanel buttonPanel = new JPanel(new FlowLayout());
 
-        JButton loadStmpButton = createLoadStmpButton(stmpPanel);
+        JButton loadStmpButton = createLoadStmpButton(stmpPanel, stmpListModel);
         JButton clearStmpButton = new JButton("Clear");
         clearStmpButton.addActionListener(e -> {
         	stmpListModel.clear();
@@ -391,8 +394,12 @@ public class gui {
 
     private JPanel createHotWordsPanel() {
         JPanel hotWordsPanel = new JPanel(new BorderLayout());
-        hotWordsListModel = new DefaultListModel<>();
-        hotWordsList = new JList<>(hotWordsListModel);
+        DefaultListModel<String> hotWordsListModel = new DefaultListModel<>();
+        JList<String> hotWordsList = new JList<>(hotWordsListModel);
+        //load
+        for (String word : hotWords.keySet()) {
+        	hotWordsListModel.addElement(word);
+        }
         hotWordsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         hotWordsPanel.add(createHeader("Hot Words", hotWordsListModel.getSize()), BorderLayout.NORTH);
         hotWordsPanel.add(new JScrollPane(hotWordsList), BorderLayout.CENTER);
@@ -441,9 +448,13 @@ public class gui {
 
         DefaultListModel<String> personalizationListModel = new DefaultListModel<>();
         JList<String> personalizationList = new JList<>(personalizationListModel);
+        //load from list
+        for (String word : personalizationKeywords) {
+            personalizationListModel.addElement(word);
+        }
         personalizationList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         personalizationFrame.add(new JScrollPane(personalizationList), BorderLayout.CENTER);
-
+        
         JPanel buttonPanel = new JPanel(new FlowLayout());
         JButton addKeywordButton = new JButton("Add Keyword");
         addKeywordButton.addActionListener(e -> {
@@ -485,7 +496,7 @@ public class gui {
     }
 
     // Button creation methods
-    private JButton createLoadApiButton(JPanel panel, DefaultListModel<String> listModel, List<String> keys) {
+    private JButton createLoadApiButton(JPanel panel, DefaultListModel<String> listModel) {
         JButton loadButton = new JButton("Load");
         loadButton.addActionListener(e -> {
             JFileChooser fileChooser = new JFileChooser();
@@ -496,15 +507,14 @@ public class gui {
                 List<String> loadedKeys = reader.get("key");
                 listModel.clear();
                 listModel.addAll(loadedKeys);
-                keys.clear();
-                keys.addAll(loadedKeys);
+                apiKeys.addAll(loadedKeys);
             }
-            updateHeader(panel, "API Keys",apiKeysListModel.getSize());
+            updateHeader(panel, "API Keys", apiKeys.size());
         });
         return loadButton;
     }
 
-    private JButton createLoadLeadsButton(JPanel leadsPanel) {
+    private JButton createLoadLeadsButton(JPanel leadsPanel, DefaultListModel<String> leadsListModel) {
         JButton loadLeadsButton = new JButton("Load");
         loadLeadsButton.addActionListener(e -> {
         	String msg = "Make sure leads start with the number in internation format (no +, -, (), or spaces)\n" +
@@ -542,7 +552,7 @@ public class gui {
         return loadLeadsButton;
     }
 
-    private JButton createLoadStmpButton(JPanel panel) {
+    private JButton createLoadStmpButton(JPanel panel, DefaultListModel<String> stmpListModel) {
         JButton loadStmpButton = new JButton("Load");
         loadStmpButton.addActionListener(e -> {
         	String msg = "Make sure logs are in the order of host, port, username, passwords, encryption\n" +
@@ -567,36 +577,36 @@ public class gui {
                     stmpListModel.addElement((String)map.get("host"));
                 }
             }
-            updateHeader(panel, "STMPs", stmpListModel.getSize());
+            updateHeader(panel, "STMPs", stmpSettings.size());
         });
         return loadStmpButton;
     }
 
-    private JButton createAddApiButton(JPanel panel, DefaultListModel<String> listModel, List<String> keys) {
+    private JButton createAddApiButton(JPanel panel, DefaultListModel<String> listModel) {
         JButton addButton = new JButton("Add");
         addButton.addActionListener(e -> {
             String newKey = JOptionPane.showInputDialog(frame, "Enter new API Key:");
             if (newKey != null && !newKey.trim().isEmpty()) {
                 listModel.addElement(newKey);
-                keys.add(newKey);
+                apiKeys.add(newKey);
             }
-            updateHeader(panel, "API Keys", apiKeysListModel.getSize());
+            updateHeader(panel, "API Keys", apiKeys.size());
         });
         return addButton;
     }
 
-    private JButton createRemoveApiButton(JPanel panel, DefaultListModel<String> listModel, List<String> keys) {
+    private JButton createRemoveApiButton(JPanel panel, DefaultListModel<String> listModel, JList<String> list) {
         JButton removeButton = new JButton("Remove");
         removeButton.addActionListener(e -> {
-            int selectedIndex = apiKeysList.getSelectedIndex();
+            int selectedIndex = list.getSelectedIndex();
             if (selectedIndex != -1) {
                 String removedKey = listModel.getElementAt(selectedIndex);
-                keys.remove(removedKey);
+                apiKeys.remove(removedKey);
                 listModel.remove(selectedIndex);
             } else {
                 JOptionPane.showMessageDialog(frame, "No key selected to remove.", "Error", JOptionPane.WARNING_MESSAGE);
             }
-            updateHeader(panel, "API Keys",apiKeysListModel.getSize());
+            updateHeader(panel, "API Keys", apiKeys.size());
         });
         return removeButton;
     }
